@@ -1,0 +1,20 @@
+app:
+  name: springboot-jwt-demo
+  user_cookie: c_user
+
+jwt:
+  header: Authorization
+  expires_in: 864000 # 10 days
+  secret: queenvictoria
+  cookie: AUTH-TOKEN
+
+spring:
+  jpa:
+    hibernate:
+      # possible values: validate | update | create | create-drop
+      ddl-auto:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sb_security
+    username: root
+    password: 
+    driver-class-name: com.mysql.jdbc.Driver
